@@ -1,0 +1,14 @@
+.personal-details-card {
+    color: white;
+    
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+
+.personal-name {
+    font-size: 20px;
+    font-weight: bold;
+}
