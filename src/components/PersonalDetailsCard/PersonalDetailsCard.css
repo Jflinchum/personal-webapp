@@ -1,14 +1,39 @@
 .personal-details-card {
     color: white;
+    min-width: 220px;
     
     img {
         width: 200px;
         height: 200px;
         border-radius: 50%;
     }
+
+    hr {
+        margin: 20px 0px;
+    }
 }
 
 .personal-name {
     font-size: 20px;
     font-weight: bold;
+}
+
+.personal-about {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.personal-details {
+    font-size: 12px;
+}
+
+.personal-primary-button {
+    border: 1px solid grey;
+    font-weight: bold;
+    display: inline-block;
+    padding: 6px;
+
+    &:hover {
+        border: 1px solid rgb(174, 216, 242);
+    }
 }

@@ -12,6 +12,7 @@ const ContentCard = ({ title, description }: ContentCardProps) => {
   return (
     <div className='content-card'>
       <h1>{title}</h1>
+      <hr/>
       <p>{description}</p>
     </div>
   );

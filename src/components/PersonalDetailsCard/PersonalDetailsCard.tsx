@@ -1,6 +1,7 @@
 import React from 'react';
-import PortraitImage from './Jonathan_Flinchum.jpg'
-import './PersonalDetailsCard.css'
+import { Link } from 'react-router';
+import PortraitImage from './Jonathan_Flinchum.jpg';
+import './PersonalDetailsCard.css';
 
 
 const PersonalDetailsCard = () => {
@@ -9,8 +10,21 @@ const PersonalDetailsCard = () => {
     <div className='personal-details-card'>
       <img src={PortraitImage} alt=""/>
 
-      <p className='personal-name'>Jonathan Flinchum</p>
+      <h1 className='personal-name'>Jonathan Flinchum</h1>
       <a href="mailto:jonflinchum@gmail.com">jonflinchum@gmail.com</a>
+
+      <hr/>
+
+      <h2 className='personal-about'>About</h2>
+      <p className='personal-details'>
+        {
+          "Hello! My name is Jonathan Flinchum, a frontend software engineer that likes to build and tinker."
+        }
+      </p>
+
+      <Link to="/resume" className='personal-primary-button'>Learn More</Link>
+
+      <hr/>
     </div>
   );
 }

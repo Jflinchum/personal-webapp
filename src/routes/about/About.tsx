@@ -2,12 +2,12 @@ import React from 'react';
 import Layout from '../../Layout.tsx';
 import ContentCard from '../../components/ContentCard/ContentCard.tsx';
 
-function Homepage() {
+function About() {
   return (
     <Layout>
-      <ContentCard title='Homepage' description={'test'}/>
+      <ContentCard title='About' description={'test'}/>
     </Layout>
   );
 }
 
-export default Homepage;
+export default About;
