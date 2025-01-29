@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/personal-webapp/static/css/main.07f20ebf.css",
+    "main.js": "/personal-webapp/static/js/main.5d52e1f1.js",
+    "static/js/453.b95b8f72.chunk.js": "/personal-webapp/static/js/453.b95b8f72.chunk.js",
+    "static/media/Jonathan_Flinchum.jpg": "/personal-webapp/static/media/Jonathan_Flinchum.7f032d673fd9a3fe3710.jpg",
+    "index.html": "/personal-webapp/index.html",
+    "main.07f20ebf.css.map": "/personal-webapp/static/css/main.07f20ebf.css.map",
+    "main.5d52e1f1.js.map": "/personal-webapp/static/js/main.5d52e1f1.js.map",
+    "453.b95b8f72.chunk.js.map": "/personal-webapp/static/js/453.b95b8f72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07f20ebf.css",
+    "static/js/main.5d52e1f1.js"
+  ]
+}
