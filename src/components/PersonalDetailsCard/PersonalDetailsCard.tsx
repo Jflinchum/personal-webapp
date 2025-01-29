@@ -18,7 +18,7 @@ const PersonalDetailsCard = () => {
       <h2 className='personal-about'>About</h2>
       <p className='personal-details'>
         {
-          "Hello! My name is Jonathan Flinchum, a frontend software engineer that likes to build and tinker."
+          "Hello! I'm Jonathan Flinchum, a frontend software engineer that likes to build and tinker."
         }
       </p>
 
