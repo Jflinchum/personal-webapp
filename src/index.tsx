@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 const root = ReactDOM.createRoot(document.getElementById('root') as Container);
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/personal-webapp">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
