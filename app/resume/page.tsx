@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import Layout from '../../Layout.tsx';
-import ContentCard from '../../components/ContentCard/ContentCard.tsx';
+import Layout from '../../components/Layout/Layout';
+import ContentCard from '../../components/ContentCard/ContentCard';
 
 function Resume() {
   return (
@@ -9,7 +8,8 @@ function Resume() {
       <ContentCard
         title='Resume'
         description={
-        <ReactMarkdown children={`
+          <p>
+          {`
 ## SKILLS
 - Expertise in Javascript, React, Typescript, Redux, Cypress, Jest, Webpack, and StoryBook.
 - Proficient with Jenkins, AWS, DevOps, Splunk, Wavefront, and Operational Excellence.
@@ -40,7 +40,8 @@ such as FIDO WebAuthn biometric logins, which leverages public and private key e
 ## EDUCATION
 Rochester Institute of Technology Rochester, NY 09/2014 - 12/2018
 Bachelor of Sciences in Computer Science - GPA 3.4 (Dean’s List)
-          `}/>
+          `}
+        </p>
         }
       />
     </Layout>

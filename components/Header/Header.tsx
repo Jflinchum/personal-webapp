@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import Link from 'next/link';
 import './Header.css';
 
 const Header = () => {
@@ -7,12 +7,12 @@ const Header = () => {
   return (
     <header id="header" className="webapp-header">
       <div className="name-titlecard">
-        <Link to="/">Jonathan Flinchum </Link>
+        <Link href="/">Jonathan Flinchum </Link>
       </div>
       <nav className='navigation-header'>
-        <Link to="/about">About</Link>
-        <Link to="/resume">Resume</Link>
-        <Link to="/contact">Contact</Link>
+        <Link href="/about">About</Link>
+        <Link href="/resume">Resume</Link>
+        <Link href="/contact">Contact</Link>
       </nav>
     </header>
   );

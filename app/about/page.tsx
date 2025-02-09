@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../../Layout.tsx';
-import ContentCard from '../../components/ContentCard/ContentCard.tsx';
+import Layout from '../../components/Layout/Layout';
+import ContentCard from '../../components/ContentCard/ContentCard';
 
 function About() {
   return (

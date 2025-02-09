@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/Header/Header.tsx';
-import PersonalDetailsCard from './components/PersonalDetailsCard/PersonalDetailsCard.tsx';
+import Header from './../Header/Header';
+import PersonalDetailsCard from './../PersonalDetailsCard/PersonalDetailsCard';
 import './Layout.css';
 
 interface LayoutProps {
@@ -8,8 +8,6 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-
-
   return (
     <div>
       <Header />

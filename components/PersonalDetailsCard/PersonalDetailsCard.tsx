@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router';
-import PortraitImage from './Jonathan_Flinchum.jpg';
+import Link from 'next/link';
+import Image from 'next/image';
 import './PersonalDetailsCard.css';
 
 
@@ -8,7 +8,7 @@ const PersonalDetailsCard = () => {
 
   return (
     <div className='personal-details-card'>
-      <img src={PortraitImage} alt=""/>
+      <Image width='200' height='200' src='/Jonathan_Flinchum.jpg' alt=""/>
 
       <h1 className='personal-name'>Jonathan Flinchum</h1>
       <a href="mailto:jonflinchum@gmail.com">jonflinchum@gmail.com</a>
@@ -22,7 +22,7 @@ const PersonalDetailsCard = () => {
         }
       </p>
 
-      <Link to="/resume" className='personal-primary-button'>Learn More</Link>
+      <Link href="/resume" className='personal-primary-button'>Learn More</Link>
 
       <hr/>
     </div>
