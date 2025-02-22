@@ -2,18 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Vars */
 :root {
-  --background: #ffffff;
+  --background: #f4f4f4;
+  --background-secondary: #ffffff;
+  --background-tertiary: #ffffff;
   --foreground: #171717;
+  --foreground-hover: #2e59ba;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
+    --background-secondary: #282827;
+    --background-tertiary: #1f1b24;
     --foreground: #ededed;
+    --foreground-hover: #aed8f2;
   }
 }
 
+
+/* Global HTML tags */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -32,12 +41,8 @@ code {
 }
 
 a {
-  color: white;
+  color: var(--foreground);
   &:hover {
-    color: rgb(174, 216, 242);
+    color: var(--foreground-hover);
   }
-}
-
-nav > a {
-  text-decoration: none;
 }

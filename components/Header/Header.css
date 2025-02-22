@@ -1,10 +1,8 @@
 .webapp-header {
-  background-color: #282828;
+  background-color: var(--background-secondary);
   display: flex;
-  font-size: calc(3px + 2vmin);
-  color: white;
   padding: 20px;
-
+  font-size: 24px;
 }
 
 .name-titlecard {
@@ -15,5 +13,6 @@
 .navigation-header {
   a {
     padding-right: 20px;
+    text-decoration: none;
   }
 }

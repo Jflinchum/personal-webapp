@@ -1,7 +1,12 @@
 
 .content-card {
-    background-color: #1F1B24;
-    width: 100%;
-    padding: 30px;
-    margin-bottom: 30px;
+  background-color: var(--background-tertiary);
+  width: 100%;
+  padding: 30px;
+}
+
+.content-header {
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 0px;
 }

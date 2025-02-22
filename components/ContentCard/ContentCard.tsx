@@ -7,13 +7,13 @@ interface ContentCardProps {
 }
 
 const ContentCard = ({ title, description }: ContentCardProps) => {
-
-
   return (
     <div className='content-card'>
-      <h1>{title}</h1>
+      <h1 className='content-header'>{title}</h1>
       <hr/>
-      {description}
+      <div className='content-body'>
+        {description}
+      </div>
     </div>
   );
 }
