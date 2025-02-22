@@ -1,6 +1,13 @@
 import React from 'react';
+import type { Metadata } from "next";
 import Layout from '../../components/Layout/Layout';
 import ContentCard from '../../components/ContentCard/ContentCard';
+
+
+export const metadata: Metadata = {
+  title: "Resume",
+  description: "Jonathan Flinchum's Resume",
+};
 
 function Resume() {
   return (
