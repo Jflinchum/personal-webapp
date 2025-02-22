@@ -1,0 +1,18 @@
+#theme-button {
+  padding: 0px 20px;
+}
+
+.sun-icon, .moon-icon {
+  transition: all .35s ease-in-out;
+  position: absolute;
+}
+
+#theme-button.active .sun-icon {
+  transform: rotate(90deg) scale(0);
+  opacity: 0;
+}
+
+#theme-button:not(.active) .moon-icon {
+  transform: rotate(-90deg) scale(0);
+  opacity: 0;
+}

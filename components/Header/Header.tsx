@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
 import './Header.css';
 
 const Header = () => {
@@ -14,6 +15,7 @@ const Header = () => {
         <Link href="/resume">Resume</Link>
         <Link href="/contact">Contact</Link>
       </nav>
+      <ThemeToggle className='nav-theme-toggle' />
     </header>
   );
 }
