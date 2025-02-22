@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 function About() {
   return (
     <Layout>
-      <ContentCard title='About' description={'test'}/>
+      <ContentCard title='About' description={
+        <article>
+          <h2>Intro</h2>
+          <p>
+            I am a frontend-oriented software engineer that enjoys tinkering and building apps!
+          </p>
+        </article>
+      }/>
     </Layout>
   );
 }
