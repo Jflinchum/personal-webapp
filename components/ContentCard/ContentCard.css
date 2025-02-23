@@ -2,10 +2,18 @@
 .content-card {
   background-color: var(--background-tertiary);
   padding: 30px;
+  width: 100%;
 }
 
 .content-header {
   font-weight: bold;
   font-size: 32px;
   margin-top: 0px;
+}
+
+
+@media (max-width: 800px) {
+  .content-card {
+    width: auto; 
+  }
 }
