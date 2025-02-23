@@ -4,7 +4,6 @@
 
 /* CSS Theme Vars */
 .light {
-  transition: 200ms linear 50ms;
   --background: #f4f4f4;
   --background-secondary: #ffffff;
   --background-tertiary: #ffffff;
@@ -13,7 +12,6 @@
 }
 
 .dark {
-  transition: 200ms linear 50ms;
   --background: #0a0a0a;
   --background-secondary: #282827;
   --background-tertiary: #1f1b24;

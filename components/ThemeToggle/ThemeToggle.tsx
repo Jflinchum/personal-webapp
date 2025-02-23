@@ -6,11 +6,18 @@ interface ThemeToggleProps {
 }
 
 const ThemeToggle = ({ className }: ThemeToggleProps) => {
-  const [darkThemeEnabled, setDarkThemeEnabled] = useState(window?.matchMedia("(prefers-color-scheme: dark)")?.matches);
+  const [darkThemeEnabled, setDarkThemeEnabled] = useState(() => {
+    const localStorageTheme = window.localStorage.getItem('darkThemeEnabled');
+    const browserPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return localStorageTheme ? localStorageTheme === 'true' : browserPreference;
+  });
 
   useEffect(() => {
     document.body.classList.remove(darkThemeEnabled ? 'light' : 'dark');
     document.body.classList.add(darkThemeEnabled ? 'dark' : 'light');
+    console.log(window.localStorage.getItem('darkThemeEnabled'));
+    console.log(darkThemeEnabled);
+    window.localStorage.setItem('darkThemeEnabled', `${darkThemeEnabled}`);
   }, [darkThemeEnabled]);
 
   const handleChange = () => {

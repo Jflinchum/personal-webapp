@@ -1,7 +1,13 @@
 import React from 'react';
+import type { Metadata } from "next";
 import Link  from 'next/link';
 import Layout from '../components/Layout/Layout';
 import ContentCard from '../components/ContentCard/ContentCard';
+
+export const metadata: Metadata = {
+  title: "Jonathan Flinchum",
+  description: "Personal website for Jonathan Flinchum",
+};
 
 const HomepageDescription = () => {
   return (

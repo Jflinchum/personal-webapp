@@ -1,4 +1,6 @@
-import type { Metadata } from "next";
+'use-client'
+import React from 'react';
+import Script from 'next/script';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,11 +14,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Jonathan Flinchum",
-  description: "Personal website for Jonathan Flinchum",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,8 +22,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <Script type='text/javascript' src="/personal-webapp/darkThemeApply.js" strategy='beforeInteractive'/>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
