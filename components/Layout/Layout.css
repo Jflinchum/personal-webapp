@@ -1,5 +1,11 @@
 .layout-content {
-    display: flex;
-    gap: 100px;
-    padding: 50px 60px 0 60px;
+  display: flex;
+  gap: 100px;
+  padding: 50px 60px 0 60px;
+}
+
+@media (max-width: 800px) {
+  .layout-content {
+    flex-direction: column-reverse;
+  }
 }

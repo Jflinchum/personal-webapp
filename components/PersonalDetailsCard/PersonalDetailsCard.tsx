@@ -8,10 +8,12 @@ const PersonalDetailsCard = () => {
 
   return (
     <div className='personal-details-card'>
-      <Image width='200' height='200' src='/personal-webapp/Jonathan_Flinchum.jpg' alt='Picture of Jonathan Flinchum'/>
+      <div className='personal-details-name-and-image'>
+        <Image width='200' height='200' src='/personal-webapp/Jonathan_Flinchum.jpg' alt='Picture of Jonathan Flinchum'/>
 
-      <h1 className='personal-name'>Jonathan Flinchum</h1>
-      <a href="mailto:jonflinchum@gmail.com">jonflinchum@gmail.com</a>
+        <h1 className='personal-name'>Jonathan Flinchum</h1>
+        <a href="mailto:jonflinchum@gmail.com">jonflinchum@gmail.com</a>
+      </div>
 
       <hr/>
 
