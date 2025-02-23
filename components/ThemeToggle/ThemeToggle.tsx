@@ -15,8 +15,6 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
   useEffect(() => {
     document.body.classList.remove(darkThemeEnabled ? 'light' : 'dark');
     document.body.classList.add(darkThemeEnabled ? 'dark' : 'light');
-    console.log(window.localStorage.getItem('darkThemeEnabled'));
-    console.log(darkThemeEnabled);
     window.localStorage.setItem('darkThemeEnabled', `${darkThemeEnabled}`);
   }, [darkThemeEnabled]);
 
