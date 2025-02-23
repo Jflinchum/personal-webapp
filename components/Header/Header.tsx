@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import ThemeToggle from '../ThemeToggle/ThemeToggle'
 import './Header.css';
+import dynamic from 'next/dynamic'
+
+const ThemeToggle = dynamic(() => import('../ThemeToggle/ThemeToggle'), { ssr: false })
 
 const Header = () => {
 
