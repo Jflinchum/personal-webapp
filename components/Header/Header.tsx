@@ -8,16 +8,26 @@ const ThemeToggle = dynamic(() => import('../ThemeToggle/ThemeToggle'), { ssr: f
 const Header = () => {
 
   return (
-    <header id="header" className="webapp-header">
-      <div className="name-titlecard">
-        <Link href="/">Jonathan Flinchum </Link>
+    <header id='header' className='p-[21px] text-[18px] flex bg-[var(--background-secondary)]'>
+      <div className='mr-auto font-bold'>
+        <Link href="/" className='no-underline'>Jonathan Flinchum </Link>
       </div>
       <nav className='navigation-header'>
-        <Link href="/about">About</Link>
-        <Link href="/resume">Resume</Link>
-        <Link href="/contact">Contact</Link>
+        <ul className='p-0 m-0 *:inline *:pr-[20px] [&_a]:no-underline'>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/resume">Resume</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+          <li>
+            <ThemeToggle className='nav-theme-toggle' />
+          </li>
+        </ul>
       </nav>
-      <ThemeToggle className='nav-theme-toggle' />
     </header>
   );
 }
