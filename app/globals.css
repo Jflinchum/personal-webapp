@@ -6,15 +6,13 @@
 .light {
   --background: #f4f4f4;
   --background-secondary: #ffffff;
-  --background-tertiary: #ffffff;
   --foreground: #171717;
   --foreground-hover: #2e59ba;
 }
 
 .dark {
   --background: #0a0a0a;
-  --background-secondary: #282827;
-  --background-tertiary: #1f1b24;
+  --background-secondary: #1d1d1d;
   --foreground: #ededed;
   --foreground-hover: #aed8f2;
 }
