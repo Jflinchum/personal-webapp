@@ -38,7 +38,7 @@ code {
 
 a {
   color: var(--foreground);
-  &:hover {
+  &:hover, &:focus {
     color: var(--foreground-hover);
   }
 }
