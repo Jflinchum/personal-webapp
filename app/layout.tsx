@@ -1,5 +1,5 @@
-'use-client'
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import Script from 'next/script';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -20,15 +20,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
+  // Default coords off screen, so that the gradient doesn't appear until mouse movement
+  const [mouseCoord, setMouseCoord] = useState({ x: -10000, y: -10000 });
+
+  const handlePointerMove = (e: React.PointerEvent) => {
+    // Only update on mouse events. Ignore touch
+    if (e.pointerType === 'mouse') {
+      setMouseCoord({ x: e.clientX, y: e.clientY });
+    }
+  };
+
   return (
-    <html lang="en">
+    <html lang="en" className='h-full'>
       <head>
         <Script type='text/javascript' src="/personal-webapp/darkThemeApply.js" strategy='beforeInteractive'/>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
+        onPointerMove={(e) => handlePointerMove(e)}
         suppressHydrationWarning
       >
+        <div className='pointer-events-none fixed inset-0 -z-30 transition duration-300' style={{background: `radial-gradient(600px at ${mouseCoord.x}px ${mouseCoord.y}px, var(--background-secondary), transparent 80%)`}} />
         {children}
       </body>
     </html>
