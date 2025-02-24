@@ -1,9 +1,13 @@
 import React from 'react';
 import './Socials.css';
 
-const Socials = () => {
+interface SocialsProps {
+  className?: string
+}
+
+const Socials = ({ className }: SocialsProps) => {
   return (
-    <ul className='socials-list [&_a]:block [&_a]:size-[25px] flex items-center'>
+    <ul className={`socials-list [&_a]:block [&_a]:size-[25px] flex items-center ${className}`}>
       <li>
         <a href='https://github.com/Jflinchum' target="_blank" rel="noreferrer noopener" aria-label="Github">
           <svg fill='currentColor'width='25' height='25' viewBox='0 0 50 50'>
