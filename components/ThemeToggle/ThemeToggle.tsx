@@ -74,7 +74,7 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
   };
 
   return (
-    <button id='theme-button' onClick={handleClick} role='switch' aria-label='Theme Toggle' aria-checked={`${darkThemeEnabled ? 'true' : 'false'}`} className={`size-6 p-0 bg-transparent border-none text-inherit cursor-pointer`}>
+    <button id='theme-button' onClick={handleClick} role='switch' aria-label='Theme Toggle' aria-checked={darkThemeEnabled} className={`size-6 p-0 bg-transparent border-none text-inherit cursor-pointer ${className}`}>
       {
         darkThemeEnabled ?
           (<MoonIcon />) :
