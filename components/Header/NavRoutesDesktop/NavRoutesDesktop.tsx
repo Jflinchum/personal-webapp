@@ -3,7 +3,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import './NavRoutesDesktop.css';
 
-const ThemeToggle = dynamic(() => import('../ThemeToggle/ThemeToggle'), { ssr: false })
+const ThemeToggle = dynamic(() => import('../../ThemeToggle/ThemeToggle'), { ssr: false })
 
 const NavRoutesDesktop = () => {
   return (

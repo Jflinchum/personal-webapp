@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import './Header.css';
-import NavRoutesMobile from '../NavRoutesMobile/NavRoutesMobile';
-import NavRoutesDesktop from '../NavRoutesDesktop/NavRoutesDesktop';
+import NavRoutesMobile from './NavRoutesMobile/NavRoutesMobile';
+import NavRoutesDesktop from './NavRoutesDesktop/NavRoutesDesktop';
 
 const Header = () => {
 
