@@ -13,7 +13,6 @@ function About() {
     <Layout>
       <ContentCard title='About' description={
         <article>
-          <h2>Intro</h2>
           <p>
             {
               `

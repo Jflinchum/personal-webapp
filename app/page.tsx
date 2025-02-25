@@ -18,7 +18,7 @@ const HomepageDescription = () => {
         or <Link href='/contact'>contact me</Link>.
       </p>
       <p>
-        Source code for the webpage can be found <a href='https://github.com/Jflinchum/personal-webapp' target='_blank' rel="noreferrer noopener">here</a>.
+        Source code for this webpage can be found <a href='https://github.com/Jflinchum/personal-webapp' target='_blank' rel="noreferrer noopener">here</a>.
       </p>
     </>
   );
@@ -28,7 +28,7 @@ const Homepage = () => {
   return (
     <Layout>
       <ContentCard 
-        title='Homepage'
+        title='Home'
         description={<HomepageDescription/>}/>
     </Layout>
   );
