@@ -37,7 +37,7 @@ function About() {
           <p>
             {
               `
-                In my spare time, I'm usually hiking, playing piano, or button mashing in my favorite video game.
+                In my spare time, I'm usually hiking, baking, playing piano, or button mashing in my favorite video games.
               `
             }
           </p>
