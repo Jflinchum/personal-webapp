@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .layout-content {
     flex-direction: column-reverse;
   }

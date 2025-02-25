@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .personal-details-name-and-image {
     text-align: center;
   }
