@@ -1,9 +1,5 @@
-@media (min-width: 801) {
-  .nav-routes-mobile {
-    display: none;
-  }
-
-  .nav-routes-mobile-sidebar {
+@media (min-width: 801px) {
+  .nav-routes-mobile, .nav-routes-mobile-sidebar {
     display: none;
   }
 }
