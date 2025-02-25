@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ThemeToggle.css';
 
-interface ThemeToggleProps {
-  className?: string;
-}
-
-const SunIcon = () => {
+const SunIcon = ({ className }: { className?: string }) => {
   return (
     <span>
       <svg
@@ -14,7 +10,7 @@ const SunIcon = () => {
         viewBox='0 0 16 16'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
-        className='sun-icon'
+        className={className}
       >
         <g clipPath='url(#clip0_3128_692)'>
           <path
@@ -34,7 +30,7 @@ const SunIcon = () => {
   );
 }
 
-const MoonIcon = () => {
+const MoonIcon = ({ className }: { className?: string }) => {
   return (
     <span>
       <svg
@@ -43,7 +39,7 @@ const MoonIcon = () => {
         viewBox='0 0 16 16'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
-        className='moon-icon'
+        className={className}
       >
         <path
           fillRule='evenodd'
@@ -56,7 +52,10 @@ const MoonIcon = () => {
   );
 }
 
-const ThemeToggle = ({ className }: ThemeToggleProps) => {
+const ThemeToggle = ({ className }: { className?: string }) => {
+
+  const [clickedOnce, setClickedOnce] = useState(false);
+
   const [darkThemeEnabled, setDarkThemeEnabled] = useState(() => {
     const localStorageTheme = window.localStorage.getItem('darkThemeEnabled');
     const browserPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -71,14 +70,17 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
 
   const handleClick = () => {
     setDarkThemeEnabled(!darkThemeEnabled);
+    if (!clickedOnce) {
+      setClickedOnce(true);
+    }
   };
 
   return (
     <button id='theme-button' onClick={handleClick} role='switch' aria-label='Theme Toggle' aria-checked={darkThemeEnabled} className={`size-6 p-0 bg-transparent border-none text-inherit cursor-pointer ${className}`}>
       {
         darkThemeEnabled ?
-          (<MoonIcon />) :
-          (<SunIcon />)
+          (<MoonIcon className={clickedOnce ? 'theme-toggle' : ''} />) :
+          (<SunIcon className={clickedOnce ? 'theme-toggle' : ''} />)
       }
     </button>
   );
