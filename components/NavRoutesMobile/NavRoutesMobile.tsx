@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import dynamic from 'next/dynamic'
 import './NavRoutesMobile.css';
+
+const ThemeToggle = dynamic(() => import('../ThemeToggle/ThemeToggle'), { ssr: false })
 
 const NavRoutesMobile = () => {
   const [open, setOpen] = useState(false);

@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import dynamic from 'next/dynamic';
 import './NavRoutesDesktop.css';
+
+const ThemeToggle = dynamic(() => import('../ThemeToggle/ThemeToggle'), { ssr: false })
 
 const NavRoutesDesktop = () => {
   return (
