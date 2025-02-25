@@ -34,6 +34,16 @@ export default function RootLayout({
     <html lang="en" className='h-full'>
       <head>
         <Script type='text/javascript' src="/personal-webapp/darkThemeApply.js" strategy='beforeInteractive'/>
+        <meta property='og:image' content='https://jflinchum.github.io/personal-webapp/Jonathan_Flinchum.jpg'/>
+        <meta property='og:image:type' content='image/jpg'/>
+        <meta property='og:image:width' content='200'/>
+        <meta property='og:image:height' content='200'/>
+        <meta property="og:image:alt" content="Jonathan Flinchum" />
+        <meta property='twitter:image' content='https://jflinchum.github.io/personal-webapp/Jonathan_Flinchum.jpg'/>
+        <meta property='twitter:image:type' content='image/jpg'/>
+        <meta property='twitter:image:width' content='200'/>
+        <meta property='twitter:image:height' content='200'/>
+        <meta property="twitter:image:alt" content="Jonathan Flinchum" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}

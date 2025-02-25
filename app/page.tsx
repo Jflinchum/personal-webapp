@@ -6,7 +6,7 @@ import ContentCard from '../components/ContentCard/ContentCard';
 
 export const metadata: Metadata = {
   title: "Jonathan Flinchum",
-  description: "Personal website for Jonathan Flinchum",
+  description: "Personal website for Jonathan Flinchum, a frontend software engineer who builds awesome user experiences for the web.",
 };
 
 const HomepageDescription = () => {
