@@ -24,9 +24,6 @@ const PersonalDetailsCard = () => {
           "Hello! I'm Jonathan Flinchum, a frontend software engineer that likes to build and tinker."
         }
       </p>
-
-      <Link href="/resume" className='personal-primary-button'>Learn More</Link>
-
       <hr/>
       <Socials />
     </div>
