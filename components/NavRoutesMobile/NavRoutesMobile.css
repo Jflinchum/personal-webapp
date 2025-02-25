@@ -1,0 +1,40 @@
+@media (min-width: 801) {
+  .nav-routes-mobile {
+    display: none;
+  }
+
+  .nav-routes-mobile-sidebar {
+    display: none;
+  }
+}
+
+.nav-routes-mobile-sidebar {
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
+  width: 200px;
+  top: 0px;
+  right: 0px;
+  background-color: var(--background-secondary);
+
+  animation: nav-sidebar-appear 0.5s;
+
+  ul {
+    padding: 0px 0px 0px 30px;
+    margin-top: 30px;
+    list-style: none;
+  }
+
+  li:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+@keyframes nav-sidebar-appear {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

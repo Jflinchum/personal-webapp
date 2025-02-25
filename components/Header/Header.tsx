@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import './Header.css';
 import dynamic from 'next/dynamic'
+import './Header.css';
+import NavRoutesMobile from '../NavRoutesMobile/NavRoutesMobile';
+import NavRoutesDesktop from '../NavRoutesDesktop/NavRoutesDesktop';
 
 const ThemeToggle = dynamic(() => import('../ThemeToggle/ThemeToggle'), { ssr: false })
 
@@ -13,20 +15,8 @@ const Header = () => {
         <Link href="/" className='no-underline'>Jonathan Flinchum </Link>
       </div>
       <nav className='navigation-header'>
-        <ul className='p-0 m-0 *:inline *:pr-[20px] [&_a]:no-underline'>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/resume">Resume</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li>
-            <ThemeToggle className='nav-theme-toggle' />
-          </li>
-        </ul>
+        <NavRoutesDesktop />
+        <NavRoutesMobile />
       </nav>
     </header>
   );

@@ -5,7 +5,7 @@ interface SocialsProps {
   className?: string
 }
 
-const Socials = ({ className }: SocialsProps) => {
+const Socials = ({ className ='' }: SocialsProps) => {
   return (
     <ul className={`socials-list [&_a]:block [&_a]:size-[25px] flex items-center ${className}`}>
       <li>

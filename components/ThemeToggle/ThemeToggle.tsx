@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ThemeToggle.css';
 
-const SunIcon = ({ className }: { className?: string }) => {
+const SunIcon = ({ className = '' }: { className?: string }) => {
   return (
     <span>
       <svg
@@ -30,7 +30,7 @@ const SunIcon = ({ className }: { className?: string }) => {
   );
 }
 
-const MoonIcon = ({ className }: { className?: string }) => {
+const MoonIcon = ({ className = '' }: { className?: string }) => {
   return (
     <span>
       <svg
