@@ -31,6 +31,16 @@ const PersonalDetailsCard = () => {
           "Hello! I'm Jonathan Flinchum, a frontend software engineer that likes to build and tinker."
         }
       </p>
+      <p className="personal-details">
+        {"Like what I do? Consider "}
+        <a
+          href="https://ko-fi.com/jflinchum"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          buying me a coffee!
+        </a>
+      </p>
       <hr />
       <Socials />
     </div>
